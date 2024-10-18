@@ -18,29 +18,29 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: HackThoughts
-author: HackThoughts
+title: 行思笔记
+author:
+  name: 行思笔记
+  email: dongruixiao@gmail.com 
 description: >- # this means to ignore newlines until "baseurl:"
   Sharing technological insights, personal thoughts, and lifestyle.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://hackthoughts.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: zhenqingfeng
-github_username:
 
 # Build settings
-remote_theme: aterenin/minima-reboot
-plugins:
-  - jekyll-feed
-  - jekyll-remote-theme
-  - jekyll-paginate
-  - jekyll-seo-tag
-  - jekyll-redirect-from
+theme: minima
+show_excerpts: true
+permalink: /:title
 
 header_pages:
-  - posts.markdown
   - about.markdown
+  
 
-markdown: kramdown
+plugins:
+  - jekyll-feed
+
+minima:
+  skin: auto
 
 # Exclude from processing.
 # The following items will not be processed, by default.
